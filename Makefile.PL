@@ -15,6 +15,8 @@ WriteMakefile(
         'Test::More' => 0,
         'YAML'       => 0,
         'Dancer'     => 1.3040,
+        'Plack'      => 0.9979,
+        'Template'   => 2.22,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Dotcloudstoria-*' },
