@@ -17,13 +17,11 @@ get '/search' => sub {
     catch {
         redirect 'index.tt', {}, { layout => 'home' };
     }
-}
-
-
-
+};
 
 sub parse_search {
-
+    # do stuff...
+    return;
 }
 
 true;
