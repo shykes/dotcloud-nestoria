@@ -3,10 +3,10 @@
         <img src="[% request.uri_base %]/images/dotcloudstoria_log.png" />
     </div>
     <div id="searchbox">
-        <form action="/search">
+        <form action="/search" method="POST">
             <p>
                 Find properties:
-                <input type="radio" value="b" id="b" name="lt" checked="checked" /><label for="b" class='srchl'>for sale</label> <input type="radio" value="r" id="r" name="lt" /><label for="r">to rent</label>
+                <input type="radio" value="b" id="lt" name="lt" checked="checked" /><label for="b" class='srchl'>for sale</label> <input type="radio" value="r" id="r" name="lt" /><label for="r">to rent</label>
             </p>
             <p>
                 <input id="q" name="word" />
