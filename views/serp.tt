@@ -3,7 +3,7 @@
         <tr>
             <td>
                 <div id="logo">
-                    <img src="[% request.uri_base %]/images/dotcloudstoria_log.png" />
+                    <a href="[% request.uri_base %]"><img src="[% request.uri_base %]/images/dotcloudstoria_log.png" /></a>
                 </div>
             </td>
             <td>
