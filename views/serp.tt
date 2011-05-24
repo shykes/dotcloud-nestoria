@@ -1,0 +1,52 @@
+<div id="serp">
+    <table>
+        <tr>
+            <td>
+                <div id="logo">
+                    <img src="[% request.uri_base %]/images/dotcloudstoria_log.png" />
+                </div>
+            </td>
+            <td>
+                <div id="searchbox">
+                    <form action="/search" method="POST">
+                        <input type="hidden" value="[% listing_type %]" id="lt" name="lt">
+                        <input type="hidden" value="[% property_type %]" id="pt" name="pt">
+                        <input id="q" name="word" value="[% word %]" />
+                        <input type="submit" value="Search" id="submitbutton" />
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <div id="listings">
+                    [% FOREACH listing = response.results %]
+                        <h3><a href="[% listing.get_lister_url %]">[% listing.get_title %]</a></h3>
+                        <table class="listing_data">
+                            <tr>
+                                <td>
+                                    <p><img src="[% listing.get_img_url %]" alt="[% listing.get_title %]" class="thumbnail" /></p>
+                                </td>
+                                <td>
+                                    <p>[% listing.get_price_formatted %]</p>
+                                    [% IF listing.get_bedroom_number %]
+                                        <p>Bedrooms: [% listing.get_bedroom_number %]</p>
+                                    [% END %]
+                                    <p>[% listing.get_datasource_name %] :: [% listing.get_lister_name %]</p>
+                                </td>
+                            </tr>
+                        </table>
+                    [% END %]
+                </div>
+            </td>
+            <td>
+                <div id="map">
+                    <div id="map_canvas"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+</div>

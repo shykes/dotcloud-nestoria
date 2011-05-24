@@ -35,4 +35,64 @@ div#homepage div#searchbox form p input#q {
     padding: 0;
 }
 
-#div { border: 1px solid #f00; }
+/* SERP */
+
+div#serp {
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#serp div#logo {
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+div#serp div#searchbox {
+    text-align: right;
+    width: 380px;
+    margin: 0 auto;
+    padding: 3px 10px;
+}
+
+div#serp div#searchbox form p input#q {
+    width: 300px;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+div#serp div#listings {
+    text-align: left;
+}
+
+div#serp table.listing_data {
+    border-bottom: 1px solid #ccc;
+}
+
+div#serp table tr td {
+    vertical-align: top;
+}
+
+div#serp #map_canvas {
+    width:    600px;
+    height:   400px;
+    position: absolute;
+    top:      130px;
+    right:    0;
+    bottom:   0;
+    left:     50%;
+}
+
+#serp h3 {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+#serp img.thumbnail {
+    margin: 0;
+    padding: 0 20px 0 0;
+}
+}
